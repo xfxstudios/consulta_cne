@@ -5,7 +5,8 @@ ___Si desea ser colaborador ó agregar adaptaciones para usar en otros framework
 
 Para su uso en Codeigniter, se debe copiar la librería en la carpeta libraries en applications.
 
-```$this->load->library('my_cne');
+```
+    $this->load->library('my_cne');
 
     $data = array("V","123456789");
     $this->my_cne->getCNE($data);
@@ -13,13 +14,14 @@ Para su uso en Codeigniter, se debe copiar la librería en la carpeta libraries 
 
 En PHP puro sería algo así:
 
-```include('cne.class.php');
+```
+    include('cne.class.php');
 
-$da = new CNE();
+    $da = new CNE();
 
-$data = array("V","123456789");
-$p = $da->getCNE($data);
-var_dump($p);
+    $data = array("V","123456789");
+    $p = $da->getCNE($data);
+    var_dump($p);
 ```
 
 __Para Donaciones: [PayPal](https://paypal.me/carlos14624/15)__
